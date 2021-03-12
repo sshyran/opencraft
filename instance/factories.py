@@ -24,6 +24,7 @@ Instance app - Factory functions for creating instances
 
 import logging
 import yaml
+import re
 
 from django.conf import settings
 
@@ -65,6 +66,15 @@ def _check_environment():
         return False
     return True
 
+def is_valid_domain_name(sub_domain):
+    """
+    Validate subdomain names passed to instance factory functions,
+    using the same regex as the BetaTestApplication.subdomain field validator.
+    """
+
+    regex = r'^[a-z0-9]([a-z0-9\-]+[a-z0-9])?$'
+
+    return re.match(regex, sub_domain)
 
 def instance_factory(**kwargs):
     """
@@ -86,6 +96,7 @@ def instance_factory(**kwargs):
     """
     # Ensure caller provided required arguments
     assert "sub_domain" in kwargs
+    assert is_valid_domain_name(kwargs.get('sub_domain'))
 
     # Create instance
     instance = OpenEdXInstance.objects.create(**kwargs)
@@ -116,6 +127,7 @@ def production_instance_factory(**kwargs):
 
     # Ensure caller provided required arguments
     assert "sub_domain" in kwargs
+    assert is_valid_domain_name(kwargs.get('sub_domain'))
 
     # Check environment and report potential problems
     environment_ready = _check_environment()
