@@ -74,6 +74,7 @@ exports[`Console Page Console Page with Edit component Correctly renders loading
                   aria-hidden="true"
                   className="fa fa-angle-left sm"
                 />
+                 
               </span>
               <span>
                 Back

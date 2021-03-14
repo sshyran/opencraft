@@ -13,6 +13,7 @@ import {
   CustomPages,
   CoursesManage
 } from 'console/components';
+import { Logos as newLogos } from 'newConsole/components';
 import { PrivateRoute } from 'auth/components';
 import { ROUTES } from '../global/constants';
 
@@ -56,17 +57,11 @@ export const ConsoleRoutes = () => {
         path={ROUTES.Console.CUSTOM_PAGES}
         component={CustomPages}
       />
-      {/* Below routes are for dummy implementation for Logo update component and they will be removed after implementation */}
-      {/* <PrivateRoute
+      <PrivateRoute
         exact
         path={ROUTES.Console.NEW_LOGOS}
         component={newLogos}
       />
-      <PrivateRoute
-        exact
-        path={ROUTES.Console.NEW_LOGOS_SIDEBAR}
-        component={LogosSideBar}
-      /> */}
       <PrivateRoute
         exact
         path={ROUTES.Console.COURSES}

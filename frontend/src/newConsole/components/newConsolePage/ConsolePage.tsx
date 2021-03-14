@@ -93,6 +93,7 @@ export class ConsolePageComponent extends React.PureComponent<Props> {
         >
           <span>
             <i className="fa fa-angle-left sm" aria-hidden="true" />
+            &nbsp;
           </span>
           <span>
             <WrappedMessage messages={messages} id="back" />

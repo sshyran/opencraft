@@ -1,2 +1,2 @@
 export * from './Logos';
-export * from './LogoSidebar';
+export * from './LogosSidebar';

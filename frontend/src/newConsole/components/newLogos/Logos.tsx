@@ -1,26 +1,29 @@
 import * as React from 'react';
 import './styles.scss';
-import { ConsolePage, PreviewBox } from 'newConsole/components';
+import { ConsolePage } from 'newConsole/components';
 import { InstancesModel } from 'console/models';
 import { connect } from 'react-redux';
 import { RootState } from 'global/state';
+import { LogosSidebar } from './LogosSidebar';
 
 interface State {}
-interface ActionProps {
-  clearErrorMessage: Function;
-  updateImages: Function;
-}
+interface ActionProps {}
 interface StateProps extends InstancesModel {}
-interface Props extends StateProps, ActionProps {}
+interface Props extends StateProps, ActionProps {
+  history: {
+    goBack: Function;
+  };
+}
 
 export class LogosComponent extends React.PureComponent<Props, State> {
   public render() {
     return (
       <ConsolePage
         contentLoading={this.props.loading}
-        showSideBarEditComponent={false}
+        goBack={this.props.history.goBack}
+        showSideBarEditComponent
       >
-        <PreviewBox />
+        <LogosSidebar />
       </ConsolePage>
     );
   }
