@@ -1,4 +1,7 @@
 .theme-preview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   border: 1px solid black;
   background: white;
 
@@ -26,6 +29,7 @@
   }
 
   .theme-home {
+    flex-grow: 1;
     .theme-hero-container {
       margin-top: 10px;
       padding-left: 10px;
