@@ -31,10 +31,10 @@ exports[`Custom Side Menu Page Renders with correct accordion expanded, and with
         >
           <a
             aria-current={null}
-            href="/console/theming/preview-and-colors"
+            href="/newconsole/theming/colors/edit"
             onClick={[Function]}
           >
-            Preview & colors
+            Colors
           </a>
           <a
             aria-current={null}

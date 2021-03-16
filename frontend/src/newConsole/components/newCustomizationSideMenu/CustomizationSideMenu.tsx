@@ -49,8 +49,8 @@ export const CustomizationSideMenu: React.FC = () => {
         <Accordion.Collapse eventKey="0">
           <Card.Body>
             <Nav className="flex-column">
-              <NavLink exact to={ROUTES.Console.THEME_PREVIEW_AND_COLORS}>
-                <WrappedMessage messages={messages} id="linkPreviewColors" />
+              <NavLink exact to={ROUTES.Console.NEW_COLORS_EDIT}>
+                <WrappedMessage messages={messages} id="linkColors" />
               </NavLink>
               <NavLink exact to={ROUTES.Console.LOGOS}>
                 <WrappedMessage messages={messages} id="linkLogos" />

@@ -198,10 +198,10 @@ exports[`Console Page Correctly renders loading page 1`] = `
                     >
                       <a
                         aria-current={null}
-                        href="/console/theming/preview-and-colors"
+                        href="/newconsole/theming/colors/edit"
                         onClick={[Function]}
                       >
-                        Preview & colors
+                        Colors
                       </a>
                       <a
                         aria-current={null}
@@ -511,10 +511,10 @@ exports[`Console Page Correctly renders page with data 1`] = `
                     >
                       <a
                         aria-current={null}
-                        href="/console/theming/preview-and-colors"
+                        href="/newconsole/theming/colors/edit"
                         onClick={[Function]}
                       >
-                        Preview & colors
+                        Colors
                       </a>
                       <a
                         aria-current={null}
@@ -780,10 +780,10 @@ exports[`Console Page Correctly renders page with email not verified alert 1`] =
                     >
                       <a
                         aria-current={null}
-                        href="/console/theming/preview-and-colors"
+                        href="/newconsole/theming/colors/edit"
                         onClick={[Function]}
                       >
-                        Preview & colors
+                        Colors
                       </a>
                       <a
                         aria-current={null}

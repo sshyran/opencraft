@@ -93,10 +93,10 @@ exports[`renders without crashing 1`] = `
                     >
                       <a
                         aria-current={null}
-                        href="/console/theming/preview-and-colors"
+                        href="/newconsole/theming/colors/edit"
                         onClick={[Function]}
                       >
-                        Preview & colors
+                        Colors
                       </a>
                       <a
                         aria-current={null}

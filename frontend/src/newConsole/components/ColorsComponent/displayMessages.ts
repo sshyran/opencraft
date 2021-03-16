@@ -1,7 +1,7 @@
 const messages = {
-    messageID: {
-        defaultMessage: 'A translatable string.',
-        description: '',
+    colors: {
+        defaultMessage: 'Colors',
+        description: 'Title test for colors edit page',
     },
 };
 
