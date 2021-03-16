@@ -1,13 +1,13 @@
 import { InstancesModel } from 'console/models';
 import * as React from 'react';
 import { ConsolePage } from 'newConsole/components';
-import messages from './displayMessages';
-import './styles.scss';
 import { ThemeColors } from 'console/components';
 import { connect } from 'react-redux';
 import { RootState } from 'global/state';
 import { updateThemeFieldValue } from 'console/actions';
 import { WrappedMessage } from 'utils/intl';
+import messages from './displayMessages';
+import './styles.scss';
 
 interface State {}
 interface ActionProps {
@@ -20,32 +20,26 @@ interface Props extends StateProps {
   };
 }
 
-class ColorsComponent extends React.PureComponent<
-  Props,
-  State
-> {
+class ColorsComponent extends React.PureComponent<Props, State> {
   public render() {
-    return(
+    return (
       <ConsolePage
         contentLoading={this.props.loading}
         goBack={this.props.history.goBack}
         showSideBarEditComponent
       >
         <h1 className="edit-heading">
-          <WrappedMessage messages={messages} id="colors"/>
+          <WrappedMessage messages={messages} id="colors" />
         </h1>
-        <ThemeColors></ThemeColors>
+        <ThemeColors />
       </ConsolePage>
-    )
+    );
   }
 }
 
-export const Colors = connect<
-  StateProps,
-  ActionProps,
-  {},
-  Props,
-  RootState
->((state: RootState) => state.console, {
-  updateThemeFieldValue
-})(ColorsComponent);
+export const Colors = connect<StateProps, ActionProps, {}, Props, RootState>(
+  (state: RootState) => state.console,
+  {
+    updateThemeFieldValue
+  }
+)(ColorsComponent);

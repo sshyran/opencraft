@@ -14,8 +14,8 @@ import {
   CoursesManage
 } from 'console/components';
 import { PrivateRoute } from 'auth/components';
-import { ROUTES } from '../global/constants';
 import { Colors } from 'newConsole/components/ColorsComponent';
+import { ROUTES } from '../global/constants';
 
 export const ConsoleRoutes = () => {
   return (

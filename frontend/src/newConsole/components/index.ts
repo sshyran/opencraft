@@ -3,4 +3,4 @@ export * from './newCustomizationSideMenu';
 export * from './newLogos';
 export * from './PreviewBox';
 
-export * from "./ColorsComponent";
+export * from './ColorsComponent';

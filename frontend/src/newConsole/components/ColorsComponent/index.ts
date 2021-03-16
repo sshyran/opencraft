@@ -1,1 +1,1 @@
-export * from "./ColorsComponent";
+export * from './ColorsComponent';
