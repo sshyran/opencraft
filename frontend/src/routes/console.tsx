@@ -15,6 +15,7 @@ import {
 } from 'console/components';
 import { PrivateRoute } from 'auth/components';
 import { ROUTES } from '../global/constants';
+import { Colors } from 'newConsole/components/ColorsComponent';
 
 export const ConsoleRoutes = () => {
   return (
@@ -67,6 +68,11 @@ export const ConsoleRoutes = () => {
         path={ROUTES.Console.NEW_LOGOS_SIDEBAR}
         component={LogosSideBar}
       /> */}
+      <PrivateRoute
+        exact
+        path={ROUTES.Console.NEW_COLORS_EDIT}
+        component={Colors}
+      />
       <PrivateRoute
         exact
         path={ROUTES.Console.COURSES}
