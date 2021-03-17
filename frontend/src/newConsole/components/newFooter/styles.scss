@@ -1,5 +1,14 @@
 @import "~styles/theme";
 
+.back-button {
+  span:not(:first-child) {
+    margin-left: 5.1px;
+    font-family: Chivo;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+}
+
 .footer-settings {
 
   h2 {
@@ -9,6 +18,8 @@
     text-align: left;
     color: #0f1f24;
     font-size: 28px;
+    font-family: PlayfairDisplay;
+    font-weight: bold;
   }
 
   .color-input {
@@ -22,6 +33,9 @@
 
     .form-label {
       font-size: 20px;
+      font-family: PlayfairDisplay;
+      font-weight: bold;
+      color: #0f1f24;
     }
 
     .input-field-preview {
@@ -34,6 +48,8 @@
 
     .reset-value {
       margin-top: 2px;
+      font-size: 14px;
+      font-family: PlayfairDisplay;
     }
   }
 }
