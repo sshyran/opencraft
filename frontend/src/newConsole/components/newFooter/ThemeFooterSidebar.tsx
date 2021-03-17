@@ -40,7 +40,7 @@ export class ThemeFooterSideBarComponent extends React.PureComponent<
 
   public render() {
     const instance = this.props.activeInstance;
-    let themeData ;
+    let themeData;
 
     if (instance.data && instance.data.draftThemeConfig) {
       themeData = instance.data.draftThemeConfig;
