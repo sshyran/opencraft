@@ -91,9 +91,8 @@ export class ConsolePageComponent extends React.PureComponent<Props> {
           variant="link"
           className="back-button"
         >
-          <span>
+          <span className="mr-2">
             <i className="fa fa-angle-left sm" aria-hidden="true" />
-            &nbsp;
           </span>
           <span>
             <WrappedMessage messages={messages} id="back" />

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`Console Page Correctly renders LogosSidebar 1`] = `
 <div
   className="console-page"
 >
@@ -69,12 +69,13 @@ exports[`renders without crashing 1`] = `
               onClick={[Function]}
               type="button"
             >
-              <span>
+              <span
+                className="mr-2"
+              >
                 <i
                   aria-hidden="true"
                   className="fa fa-angle-left sm"
                 />
-                 
               </span>
               <span>
                 Back

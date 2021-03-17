@@ -69,12 +69,13 @@ exports[`Console Page Console Page with Edit component Correctly renders loading
               onClick={[Function]}
               type="button"
             >
-              <span>
+              <span
+                className="mr-2"
+              >
                 <i
                   aria-hidden="true"
                   className="fa fa-angle-left sm"
                 />
-                 
               </span>
               <span>
                 Back

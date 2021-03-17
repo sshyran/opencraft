@@ -51,11 +51,15 @@ export const ImageUploadField: React.FC<ImageUploadFieldProps> = (
   const buttonContents = () => {
     /* eslint-disable react/prop-types */
     if (props.innerPreview) {
-      return (
-        <div className="image-container">
-          <img src={props.innerPreview} alt="preview" />
-        </div>
-      );
+      const img = new Image();
+      img.src = props.innerPreview;
+      if (img.height !== 0) {
+        return (
+          <div className="image-container">
+            <img src={props.innerPreview} alt="preview" />
+          </div>
+        );
+      }
     }
     return (
       <div>
