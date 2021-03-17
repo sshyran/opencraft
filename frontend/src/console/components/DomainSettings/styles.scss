@@ -1,0 +1,23 @@
+@import "~styles/theme";
+
+.domain-settings-container {
+  font-family: $chivo-font;
+  padding: 45px;
+
+  .domain-settings-description {
+    color: #797979;
+    font-size: 16px;
+    max-width: 716px;
+  }
+
+  h2 {
+    color: #000000;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .addBtn {
+    font-size: 14px;
+  }
+}

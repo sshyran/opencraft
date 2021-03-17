@@ -20,6 +20,7 @@ export interface InstanceSettingsModel {
   logo?: string;
   favicon?: string;
   heroCoverImage: null | string;
+  externalDomain?: string;
 }
 
 export interface DeploymentNotificationModel {

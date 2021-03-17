@@ -65,6 +65,7 @@ export const ROUTES = {
     THEME_NAVIGATION: '/console/theming/navigation',
     THEME_FOOTER: '/console/theming/footer',
     INSTANCE_SETTINGS_GENERAL: '/console/settings/general',
+    INSTANCE_SETTINGS_DOMAIN: '/console/settings/domain',
     HERO: '/console/theming/hero',
     NEW_HOME: '/newconsole',
     NEW_LOGOS: '/newconsole/theming/logos',
