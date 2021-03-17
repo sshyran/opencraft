@@ -19,7 +19,6 @@ export const PreviewComponent: React.FC<PreviewComponentProps> = (
   const { instanceData } = props;
   const themeData = instanceData.draftThemeConfig!;
 
-  // To Do: Edit this to taste when implementing the other previews
   if (props.currentPreview === 'dashboard') {
     return (
       <div className="theme-preview">
