@@ -26,13 +26,20 @@ interface StateProps extends InstancesModel { }
 
 interface Props extends StateProps, ActionProps { }
 
+interface AddModalProps {
+  instanceId?: number
+  updateFieldValue: Function
+}
 
-const AddDomainButton: React.FC = () => {
+const AddDomainButton: React.FC<AddModalProps> = ({instanceId, updateFieldValue}) => {
   const [show, setShow] = React.useState(false);
+  const [domain, setDomain] = React.useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const handleVerify = () => { console.log("verifying") }
+  const handleAddDomain = () => {
+    updateFieldValue(instanceId, 'externalDomain', domain)
+  }
 
 
   return (
@@ -64,12 +71,19 @@ const AddDomainButton: React.FC = () => {
             </Row>
             <Row>
               <Col lg={8}>
-                <TextInputField type="domain" messages={messages} fieldName="domainInput"></TextInputField>
+                <TextInputField
+                  value={domain}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDomain(e.target.value)}
+                  type="domain"
+                  messages={messages}
+                  fieldName="domainInput"></TextInputField>
               </Col>
             </Row>
             <div className="flex flex-row">
               <div className="verify-btn">
-                <Button variant='primary' onClick={handleVerify} disabled>Verify</Button>
+                <Button variant='primary' onClick={handleAddDomain}>
+                  <WrappedMessage messages={messages} id="addDomainBtn"></WrappedMessage>
+                </Button>
               </div>
               <div>
                 <Button variant='outline-primary' onClick={handleClose}>Cancel</Button>
@@ -117,7 +131,7 @@ export class DomainSettingsComponent extends React.PureComponent<Props, State> {
       )
     } else {
       externalDomainComponent = (
-        <AddDomainButton></AddDomainButton>
+        <AddDomainButton instanceId={instance.data?.id} updateFieldValue={this.props.updateFieldValue}></AddDomainButton>
       )
     }
 

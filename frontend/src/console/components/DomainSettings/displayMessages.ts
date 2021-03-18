@@ -22,6 +22,10 @@ const messages = {
     domainInput: {
         defaultMessage: 'Domain Name',
         description: 'Domain name input field'
+    },
+    addDomainBtn: {
+        defaultMessage: 'Add Domain',
+        description: 'Submit button to add domain'
     }
 };
 

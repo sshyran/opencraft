@@ -28,6 +28,10 @@
     margin-left: 10px;
     border-bottom: 1px black solid;
   }
+
+  .check-dns-btn {
+    cursor: pointer;
+  }
 }
 
 .options-dropdown-toggle {
@@ -50,4 +54,22 @@
 
 .options-dropdown-toggle::after {
   content: none;
+}
+
+.dns-config-help-modal{
+  font-family: $chivo-font;
+  padding: 10px;
+
+  .dns-config-help-modal-description {
+    color: #797979;
+    font-size: 16px;
+    max-width: 716px
+  }
+
+  h2 {
+    color: #000000;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 600;
+  }
 }

@@ -33,6 +33,9 @@ export const MATOMO_MY_DOMAIN = process.env.REACT_APP_MATOMO_MY_DOMAIN || '';
 export const MATOMO_ALIAS_DOMAIN =
   process.env.REACT_APP_MATOMO_ALIAS_DOMAIN || '';
 
+export const EXTERNAL_DOMAIN_CNAME_VALUE =
+  process.env.EXTERNAL_DOMAIN_CNAME_VALUE || 'haproxy.net.opencraft.hosting';
+
 export interface StringIndexedArray {
   [key: string]: any;
 }
