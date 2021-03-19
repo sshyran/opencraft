@@ -2,7 +2,7 @@
 
 exports[`renders without crashing 1`] = `
 <div
-  className="theme-preview"
+  className="theme-preview d-flex flex-column h-100"
 >
   <div
     className="theme-preview-navigation row"
@@ -103,7 +103,7 @@ exports[`renders without crashing 1`] = `
     </div>
   </div>
   <div
-    className="theme-home"
+    className="theme-home flex-grow-1"
   >
     <div
       className="theme-hero-container row"

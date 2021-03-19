@@ -19,13 +19,13 @@ export const PreviewComponent: React.FC<PreviewComponentProps> = (
   const themeData = instanceData.draftThemeConfig!;
 
   return (
-    <div className="theme-preview">
+    <div className="theme-preview d-flex flex-column h-100">
       <Row className="theme-preview-navigation">
         <Col className="theme-preview-navigation">
           <NavigationMenu instanceData={instanceData} themeData={themeData} />
         </Col>
       </Row>
-      <div className="theme-home">
+      <div className="theme-home flex-grow-1">
         <Row className="theme-hero-container">
           <Col>
             <HeroPreview

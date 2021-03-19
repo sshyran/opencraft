@@ -657,7 +657,7 @@ exports[`Theme preview and colors page Render theme settings page with theme set
                     className="col-9"
                   >
                     <div
-                      className="theme-preview"
+                      className="theme-preview d-flex flex-column h-100"
                     >
                       <div
                         className="theme-preview-navigation row"
@@ -758,7 +758,7 @@ exports[`Theme preview and colors page Render theme settings page with theme set
                         </div>
                       </div>
                       <div
-                        className="theme-home"
+                        className="theme-home flex-grow-1"
                       >
                         <div
                           className="theme-hero-container row"
@@ -1463,7 +1463,7 @@ exports[`Theme preview and colors page Render theme settings page with theme set
                     className="col-9"
                   >
                     <div
-                      className="theme-preview"
+                      className="theme-preview d-flex flex-column h-100"
                     >
                       <div
                         className="theme-preview-navigation row"
@@ -1564,7 +1564,7 @@ exports[`Theme preview and colors page Render theme settings page with theme set
                         </div>
                       </div>
                       <div
-                        className="theme-home"
+                        className="theme-home flex-grow-1"
                       >
                         <div
                           className="theme-hero-container row"
