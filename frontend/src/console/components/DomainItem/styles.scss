@@ -1,5 +1,8 @@
 @import "~styles/theme";
-@import "~styles/utility";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
 
 .list-item {
   margin: 20px 0px;
@@ -14,10 +17,6 @@
     font-size: 14px;
   }
 
-  .domain-name {
-    width: 30%;
-  }
-
   .dns-config-icon {
     color: $alert-yellow-3;
   }
@@ -30,7 +29,14 @@
   }
 
   .check-dns-btn {
-    cursor: pointer;
+    flex-grow: 1;
+    text-decoration: none;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: inherit;
   }
 }
 

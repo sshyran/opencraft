@@ -1,1 +1,1 @@
-export * from "./DomainSettings";
+export * from './DomainSettings';

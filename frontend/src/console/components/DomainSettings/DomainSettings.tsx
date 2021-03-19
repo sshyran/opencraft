@@ -5,12 +5,13 @@ import { WrappedMessage } from 'utils/intl';
 import { Button, Col, Container, Modal, Row } from 'react-bootstrap';
 import { RootState } from 'global/state';
 import { connect } from 'react-redux';
-import messages from './displayMessages';
 import './styles.scss';
-import { DomainListItem } from '../DomainItem';
 import { INTERNAL_DOMAIN_NAME } from 'global/constants';
 import { TextInputField } from 'ui/components';
 import { updateFieldValue } from 'console/actions';
+import { DomainListItem } from '../DomainItem';
+import messages from './displayMessages';
+
 interface State {
   title: string;
   subtitle: string;
@@ -19,53 +20,49 @@ interface State {
 }
 
 interface ActionProps {
-  updateFieldValue: Function
+  updateFieldValue: Function;
 }
 
-interface StateProps extends InstancesModel { }
+interface StateProps extends InstancesModel {}
 
-interface Props extends StateProps, ActionProps { }
+interface Props extends StateProps, ActionProps {}
 
 interface AddModalProps {
-  instanceId?: number
-  updateFieldValue: Function
+  instanceId?: number;
+  updateFieldValueHandler: Function;
 }
 
-const AddDomainButton: React.FC<AddModalProps> = ({instanceId, updateFieldValue}) => {
+const AddDomainButton: React.FC<AddModalProps> = (props: AddModalProps) => {
   const [show, setShow] = React.useState(false);
   const [domain, setDomain] = React.useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleAddDomain = () => {
-    updateFieldValue(instanceId, 'externalDomain', domain)
-  }
-
+    if (props.instanceId) {
+      props.updateFieldValueHandler(props.instanceId, 'externalDomain', domain);
+    }
+  };
+  const handleDomainChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setDomain(e.target.value);
+  };
 
   return (
     <div>
-      <Button
-        className="addBtn"
-        size="lg"
-        onClick={handleShow}
-      >
+      <Button className="addBtn" size="lg" onClick={handleShow}>
         <WrappedMessage messages={messages} id="buttonText" />
       </Button>
 
-      <Modal
-        size={'lg'}
-        show={show}
-        onClose={handleClose}
-        centered>
+      <Modal size="lg" show={show} onClose={handleClose} centered>
         <Modal.Body>
           <Container className="add-domain-modal">
             <h2>
-              <WrappedMessage messages={messages} id="modalTitle"></WrappedMessage>
+              <WrappedMessage messages={messages} id="modalTitle" />
             </h2>
             <Row>
               <Col className="add-domain-modal-description">
                 <p>
-                  <WrappedMessage messages={messages} id="modalDescription"></WrappedMessage>
+                  <WrappedMessage messages={messages} id="modalDescription" />
                 </p>
               </Col>
             </Row>
@@ -73,87 +70,92 @@ const AddDomainButton: React.FC<AddModalProps> = ({instanceId, updateFieldValue}
               <Col lg={8}>
                 <TextInputField
                   value={domain}
-                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDomain(e.target.value)}
+                  onChange={handleDomainChange}
                   type="domain"
                   messages={messages}
-                  fieldName="domainInput"></TextInputField>
+                  fieldName="domainInput"
+                />
               </Col>
             </Row>
-            <div className="flex flex-row">
+            <div className="d-flex flex-row">
               <div className="verify-btn">
-                <Button variant='primary' onClick={handleAddDomain}>
-                  <WrappedMessage messages={messages} id="addDomainBtn"></WrappedMessage>
+                <Button variant="primary" onClick={handleAddDomain}>
+                  <WrappedMessage messages={messages} id="addDomainBtn" />
                 </Button>
               </div>
               <div>
-                <Button variant='outline-primary' onClick={handleClose}>Cancel</Button>
+                <Button variant="outline-primary" onClick={handleClose}>
+                  Cancel
+                </Button>
               </div>
             </div>
           </Container>
         </Modal.Body>
       </Modal>
     </div>
-  )
-}
+  );
+};
 
 export class DomainSettingsComponent extends React.PureComponent<Props, State> {
-
   private deleteExternalDomain = () => {
     const instance = this.props.activeInstance;
     if (instance.data) {
-      this.props.updateFieldValue(instance.data.id, "externalDomain", "")
+      this.props.updateFieldValue(instance.data.id, 'externalDomain', '');
     }
-  }
+  };
 
   public render() {
-
-    var subdomain;
-    var externalDomain;
-    var dnsConfigState;
-    var externalDomainComponent;
+    let subdomain;
+    let externalDomain;
+    let dnsConfigState;
+    let externalDomainComponent;
     const instance = this.props.activeInstance;
     if (instance && instance.data) {
       subdomain = instance.data.subdomain;
       externalDomain = instance.data.externalDomain;
-      dnsConfigState = instance.data.dnsConfigurationState
+      dnsConfigState = instance.data.dnsConfigurationState;
     }
 
     if (externalDomain) {
       externalDomainComponent = (
         <>
-          <hr></hr>
+          <hr />
           <DomainListItem
             domainName={externalDomain}
-            isExternal={true}
+            isExternal
             dnsState={dnsConfigState}
-            onDelete={this.deleteExternalDomain} />
+            onDelete={this.deleteExternalDomain}
+          />
         </>
-      )
+      );
     } else {
       externalDomainComponent = (
-        <AddDomainButton instanceId={instance.data?.id} updateFieldValue={this.props.updateFieldValue}></AddDomainButton>
-      )
+        <AddDomainButton
+          instanceId={instance.data?.id}
+          updateFieldValueHandler={this.props.updateFieldValue}
+        />
+      );
     }
 
     return (
-      <ConsolePage
-        contentLoading={false}
-        showSideBarEditComponent={false}
-      >
+      <ConsolePage contentLoading={false} showSideBarEditComponent={false}>
         <PreviewBox>
           <Container className="domain-settings-container">
             <h2>
-              <WrappedMessage messages={messages} id="title"></WrappedMessage>
+              <WrappedMessage messages={messages} id="title" />
             </h2>
             <Row>
               <Col className="domain-settings-description">
                 <p>
-                  <WrappedMessage messages={messages} id="description"></WrappedMessage>
+                  <WrappedMessage messages={messages} id="description" />
                 </p>
               </Col>
             </Row>
             <div>
-              <DomainListItem domainName={subdomain + INTERNAL_DOMAIN_NAME} isExternal={false}></DomainListItem>
+              <DomainListItem
+                domainName={subdomain + INTERNAL_DOMAIN_NAME}
+                isExternal={false}
+              />
               {externalDomainComponent}
             </div>
           </Container>

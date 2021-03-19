@@ -1,7 +1,15 @@
 import { EXTERNAL_DOMAIN_CNAME_VALUE } from 'global/constants';
 import { OpenEdXInstanceConfigUpdateDnsConfigurationStateEnum as DnsStateEnum } from 'ocim-client';
 import * as React from 'react';
-import { Button, Col, Container, Dropdown, Modal, Row, Table } from 'react-bootstrap';
+import {
+  Button,
+  Col,
+  Container,
+  Dropdown,
+  Modal,
+  Row,
+  Table
+} from 'react-bootstrap';
 import DropdownMenu from 'react-bootstrap/DropdownMenu';
 import { WrappedMessage } from 'utils/intl';
 import messages from './displayMessages';
@@ -15,43 +23,53 @@ interface State {
 }
 
 interface Props {
-  domainName?: string,
-  isExternal: boolean,
-  dnsState?: DnsStateEnum,
-  onDelete?: Function
+  domainName?: string;
+  isExternal: boolean;
+  dnsState?: DnsStateEnum;
+  onDelete?: Function;
 }
 
 interface DropdownButtonPropType {
-  children?: React.ReactNode,
-  onClick?: React.MouseEventHandler,
+  children?: React.ReactNode;
+  onClick?: React.MouseEventHandler;
 }
 
 interface DomainConfigHelpProps {
-  domainName?: string
+  domainName?: string;
 }
 
-const DomainConfigHelp: React.FC<DomainConfigHelpProps> = ({domainName}) => {
-
-  const [show, setShow] = React.useState(false)
+const DomainConfigHelp: React.FC<DomainConfigHelpProps> = (
+  props: DomainConfigHelpProps
+) => {
+  const [show, setShow] = React.useState(false);
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center flex-grow check-dns-btn" onClick={() => setShow(true)}>
-        <div className="flex flex-row">
-          <div className="dns-config-icon"><i className="fas fa-exclamation-triangle"></i></div>
-          <div className="flex-grow dns-config">Check DNS Configuration</div>
+      <button
+        type="button"
+        className="d-flex flex-column justify-content-center align-items-center check-dns-btn"
+        onClick={e => {
+          e.preventDefault();
+          setShow(true);
+        }}
+      >
+        <div className="d-flex flex-row">
+          <div className="dns-config-icon">
+            <i className="fas fa-exclamation-triangle" />
+          </div>
+          <div className="dns-config">Check DNS Configuration</div>
         </div>
-      </div >
-      <Modal show={show} centered size={'lg'}>
+      </button>
+      <Modal show={show} centered size="lg">
         <Modal.Body>
           <Container className="dns-config-help-modal">
             <h2>
-              <WrappedMessage messages={messages} id="helpTitle"></WrappedMessage>
+              <WrappedMessage messages={messages} id="helpTitle" />
             </h2>
             <Row>
               <Col className="dns-config-help-modal-description">
                 <p>
-                  <WrappedMessage messages={messages} id="helpDescription"></WrappedMessage>
+                  <WrappedMessage messages={messages} id="helpDescription" />
                 </p>
               </Col>
             </Row>
@@ -65,53 +83,64 @@ const DomainConfigHelp: React.FC<DomainConfigHelpProps> = ({domainName}) => {
               </thead>
               <tbody>
                 <tr>
-                  <td>{domainName}</td>
+                  <td>{props.domainName}</td>
                   <td>CNAME</td>
                   <td>{EXTERNAL_DOMAIN_CNAME_VALUE}</td>
                 </tr>
                 <tr>
-                  <td>*.{domainName}</td>
+                  <td>
+                    *.
+                    {props.domainName}
+                  </td>
                   <td>CNAME</td>
                   <td>{EXTERNAL_DOMAIN_CNAME_VALUE}</td>
                 </tr>
               </tbody>
             </Table>
-            <div className="flex flex-row">
+            <div className="d-flex flex-row">
               <div>
-                <Button size="lg" className="addBtn" variant='primary' onClick={() => setShow(false)}>I have made these changes</Button>
+                <Button
+                  size="lg"
+                  className="addBtn"
+                  variant="primary"
+                  onClick={() => setShow(false)}
+                >
+                  I have made these changes
+                </Button>
               </div>
             </div>
           </Container>
         </Modal.Body>
       </Modal>
     </>
-  )
-}
+  );
+};
 
 export class DomainListItem extends React.PureComponent<Props, State> {
-
   private getDropdown() {
-    const customToggle = React.forwardRef<null, DropdownButtonPropType>(({ children, onClick }, ref) => {
-      return (
-        <button
-          className="options-dropdown-toggle flex flex-row"
-          ref={ref}
-          onClick={
-            (e) => {
+    const customToggle = React.forwardRef<null, DropdownButtonPropType>(
+      ({ children, onClick }, ref) => {
+        return (
+          <button
+            type="button"
+            className="options-dropdown-toggle d-flex flex-row"
+            ref={ref}
+            onClick={e => {
               e.preventDefault();
               if (onClick) {
                 onClick(e);
               }
-            }
-          }>
-          {children}
-          <i className="dropdown-toggle-caret fas fa-angle-down"></i>
-        </button>
-      );
-    });
+            }}
+          >
+            {children}
+            <i className="dropdown-toggle-caret fas fa-angle-down" />
+          </button>
+        );
+      }
+    );
 
     return (
-      <Dropdown className="flex flex-col items-center justify-center">
+      <Dropdown className="d-flex flex-column align-items-center justify-content-center">
         <Dropdown.Toggle as={customToggle} id="domain-dropdown">
           <span>Options</span>
         </Dropdown.Toggle>
@@ -123,46 +152,45 @@ export class DomainListItem extends React.PureComponent<Props, State> {
               if (this.props.onDelete) {
                 this.props.onDelete();
               }
-            }
-            }
-          >Delete Domain</Dropdown.Item>
+            }}
+          >
+            Delete Domain
+          </Dropdown.Item>
         </DropdownMenu>
       </Dropdown>
-    )
+    );
   }
 
   public render() {
-
     // Determine the color of the domain name text based on DNS config status
-    var domainColor: string = 'color-green';
-    if (this.props.isExternal && this.props.dnsState !== DnsStateEnum.Verified) {
+    let domainColor: string = 'color-green';
+    if (
+      this.props.isExternal &&
+      this.props.dnsState !== DnsStateEnum.Verified
+    ) {
       domainColor = '';
     }
 
     return (
       <ul className="domain-list">
         <li className={`list-item ${domainColor}`}>
-          <div className="flex flex-wrap">
-            <div className="domain-name flex-1">
+          <div className="d-flex flex-wrap justify-content-between">
+            <div>
               <div>{this.props.domainName}</div>
-              {
-                this.props.isExternal ?
-                  <div className="domain-type">Primary Domain</div> :
-                  <div className="domain-type">Default Subdomain</div>
-              }
+              {this.props.isExternal ? (
+                <div className="domain-type">Primary Domain</div>
+              ) : (
+                <div className="domain-type">Default Subdomain</div>
+              )}
             </div>
-            {
-              this.props.isExternal && this.props.dnsState !== DnsStateEnum.Verified ?
-                <DomainConfigHelp domainName={this.props.domainName}/> : null
-            }
-            {
-              this.props.isExternal ?
-                this.getDropdown() :
-                null
-            }
+            {this.props.isExternal &&
+            this.props.dnsState !== DnsStateEnum.Verified ? (
+              <DomainConfigHelp domainName={this.props.domainName} />
+            ) : null}
+            {this.props.isExternal ? this.getDropdown() : null}
           </div>
         </li>
       </ul>
-    )
+    );
   }
 }
