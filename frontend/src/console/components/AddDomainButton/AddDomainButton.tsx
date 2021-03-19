@@ -5,83 +5,87 @@ import { RootState } from 'global/state';
 import { connect } from 'react-redux';
 import { TextInputField } from 'ui/components';
 import { WrappedMessage } from 'utils/intl';
+import { updateFieldValue } from 'console/actions';
 import messages from './displayMessages';
 import './styles.scss';
-import { updateFieldValue } from 'console/actions';
-
 
 interface State {
-  showModal: boolean
-  externalDomain?: string
+  showModal: boolean;
+  externalDomain?: string;
 }
 
 interface ActionProps {
   updateFieldValue: Function;
 }
 
-interface StateProps extends InstancesModel { }
+interface StateProps extends InstancesModel {}
 
-interface Props extends StateProps, ActionProps { }
+interface Props extends StateProps, ActionProps {}
 
 class AddDomainButtonComponent extends React.PureComponent<Props, State> {
-
   constructor(props: Props) {
     super(props);
 
     this.state = {
       showModal: false,
-      externalDomain: ""
-    }
+      externalDomain: ''
+    };
 
     if (props.activeInstance.data) {
       this.state = {
         showModal: false,
         externalDomain: props.activeInstance.data.externalDomain
-      }
+      };
+    }
+  }
+
+  public componentDidUpdate(prevProps: Props) {
+    const instance = prevProps.activeInstance;
+    if (!instance.data) {
+      this.handleHide();
+    } else if (
+      prevProps.activeInstance!.data!.externalDomain !==
+      this.props.activeInstance!.data!.externalDomain
+    ) {
+      this.handleHide();
     }
   }
 
   private handleShow = () => {
     this.setState({
       showModal: true
-    })
-  }
+    });
+  };
 
   private handleHide = () => {
     this.setState({
       showModal: false
-    })
-  }
+    });
+  };
 
   private handleClose = () => {
     this.setState({
       showModal: false
-    })
-  }
+    });
+  };
 
   private handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
+    const { value } = event.target;
     this.setState({
       externalDomain: value
-    })
-  }
+    });
+  };
 
   private handleUpdateExternalDomain = () => {
     const instance = this.props.activeInstance;
     if (instance.data) {
-      this.props.updateFieldValue(instance.data.id, 'externalDomain', this.state.externalDomain)
+      this.props.updateFieldValue(
+        instance.data.id,
+        'externalDomain',
+        this.state.externalDomain
+      );
     }
-  }
-
-  public componentDidUpdate(prevProps: Props) {
-    if (
-      prevProps.activeInstance!.data!.externalDomain !== this.props.activeInstance!.data!.externalDomain
-    ) {
-      this.setState({
-        showModal: false
-      })
-    }
-  }
+  };
 
   public render() {
     const instance = this.props.activeInstance;
@@ -98,7 +102,12 @@ class AddDomainButtonComponent extends React.PureComponent<Props, State> {
           <WrappedMessage messages={messages} id="buttonText" />
         </Button>
 
-        <Modal size="lg" show={this.state.showModal} onClose={this.handleClose} centered>
+        <Modal
+          size="lg"
+          show={this.state.showModal}
+          onClose={this.handleClose}
+          centered
+        >
           <Modal.Body>
             <Container className="add-domain-modal">
               <h2>
@@ -125,14 +134,17 @@ class AddDomainButtonComponent extends React.PureComponent<Props, State> {
               </Row>
               <div className="d-flex flex-row">
                 <div className="verify-btn">
-                  <Button variant="primary" onClick={this.handleUpdateExternalDomain}>
+                  <Button
+                    variant="primary"
+                    onClick={this.handleUpdateExternalDomain}
+                  >
                     <WrappedMessage messages={messages} id="addDomainBtn" />
                   </Button>
                 </div>
                 <div>
                   <Button variant="outline-primary" onClick={this.handleHide}>
                     Cancel
-                </Button>
+                  </Button>
                 </div>
               </div>
             </Container>

@@ -46,4 +46,4 @@ export * from './DomainSettings';
 
 export * from './DomainItem';
 
-export * from "./AddDomainButton";
+export * from './AddDomainButton';

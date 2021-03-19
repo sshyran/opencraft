@@ -9,7 +9,7 @@ const messages = {
       ' Custom domains allow users to access your site via non-OpenCraft domain names.' +
       ' A custom domain increase your monthly OpenCraft bill by €25.',
     description: 'Page Explanation'
-  },
+  }
 };
 
 export default messages;

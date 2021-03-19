@@ -60,9 +60,7 @@ export class DomainSettingsComponent extends React.PureComponent<Props, State> {
         </>
       );
     } else {
-      externalDomainComponent = (
-        <AddDomainButton/>
-      );
+      externalDomainComponent = <AddDomainButton />;
     }
 
     return (
