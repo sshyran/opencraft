@@ -293,14 +293,59 @@ exports[`renders without crashing 1`] = `
             className="col-md-7"
           >
             <div
-              className="customization-form"
+              className="preview-box card"
             >
               <div
-                className="loading"
+                className="domain-settings-container container"
               >
-                <i
-                  className="fas fa-2x fa-sync-alt fa-spin"
-                />
+                <h2>
+                  Domain Settings
+                </h2>
+                <div
+                  className="row"
+                >
+                  <div
+                    className="domain-settings-description col"
+                  >
+                    <p>
+                      By default, your site is always accessible via an OpenCraft subdomain. Custom domains allow users to access your site via non-OpenCraft domain names. A custom domain increase your monthly OpenCraft bill by €25.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <ul
+                    className="domain-list"
+                  >
+                    <li
+                      className="list-item color-green"
+                    >
+                      <div
+                        className="d-flex flex-wrap justify-content-between"
+                      >
+                        <div>
+                          <div>
+                            undefined.opencraft.hosting
+                          </div>
+                          <div
+                            className="domain-type"
+                          >
+                            Default Subdomain
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div>
+                    <button
+                      className="addBtn btn btn-primary btn-lg"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Add custom domain (€25/month)
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

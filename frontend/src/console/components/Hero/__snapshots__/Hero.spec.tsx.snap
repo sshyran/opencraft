@@ -205,11 +205,9 @@ exports[`Hero customization page renders the hero customization page when instan
                         General
                       </a>
                       <a
-                        aria-current="page"
-                        className="disabled active"
-                        href="/"
+                        aria-current={null}
+                        href="/console/settings/domain"
                         onClick={[Function]}
-                        style={Object {}}
                       >
                         Domain
                       </a>
@@ -493,11 +491,9 @@ exports[`Hero customization page renders the hero customization page when instan
                         General
                       </a>
                       <a
-                        aria-current="page"
-                        className="disabled active"
-                        href="/"
+                        aria-current={null}
+                        href="/console/settings/domain"
                         onClick={[Function]}
-                        style={Object {}}
                       >
                         Domain
                       </a>
@@ -781,11 +777,9 @@ exports[`Hero customization page renders the hero customization page when the in
                         General
                       </a>
                       <a
-                        aria-current="page"
-                        className="disabled active"
-                        href="/"
+                        aria-current={null}
+                        href="/console/settings/domain"
                         onClick={[Function]}
-                        style={Object {}}
                       >
                         Domain
                       </a>
@@ -1069,11 +1063,9 @@ exports[`Hero customization page renders the hero customization page when the in
                         General
                       </a>
                       <a
-                        aria-current="page"
-                        className="disabled active"
-                        href="/"
+                        aria-current={null}
+                        href="/console/settings/domain"
                         onClick={[Function]}
-                        style={Object {}}
                       >
                         Domain
                       </a>
@@ -1393,11 +1385,9 @@ exports[`Hero customization page renders without crashing 1`] = `
                         General
                       </a>
                       <a
-                        aria-current="page"
-                        className="disabled active"
-                        href="/"
+                        aria-current={null}
+                        href="/console/settings/domain"
                         onClick={[Function]}
-                        style={Object {}}
                       >
                         Domain
                       </a>
