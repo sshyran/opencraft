@@ -340,11 +340,13 @@ export const updateFieldValue = (
         }
       });
     }
-  } catch {
+  } catch (error) {
+    // Extract the feedback values from response
+    const feedback = await error.json()
     dispatch({
       type: Types.UPDATE_INSTANCE_INFO_FAILURE,
       data: {
-        [fieldName]: value
+        [fieldName]: Object.values(feedback)
       }
     });
   }

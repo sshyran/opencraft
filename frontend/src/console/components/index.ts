@@ -45,3 +45,5 @@ export * from './ButtonStyles';
 export * from './DomainSettings';
 
 export * from './DomainItem';
+
+export * from "./AddDomainButton";
