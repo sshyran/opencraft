@@ -1,1 +1,1 @@
-export * from './LogosSidebar';
+export * from './LogoSidebar';

@@ -13,7 +13,7 @@ import {
   CustomPages,
   CoursesManage
 } from 'console/components';
-import { LogosSidebar as newLogos } from 'newConsole/components';
+import { LogosSideBar as newLogos } from 'newConsole/components';
 import { PrivateRoute } from 'auth/components';
 import { ROUTES } from '../global/constants';
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { setupComponentForTesting } from "utils/testing";
-import { LogosSidebar } from './LogosSidebar';
+import { LogosSideBar } from './LogoSidebar';
 
 
 describe("Console Page", function() {
-  it('Correctly renders LogosSidebar', () => {
+  it('Correctly renders LogosSideBar', () => {
       const tree = setupComponentForTesting(
-        <LogosSidebar
+        <LogosSideBar
             history={()=>{}}
         />).toJSON();
       expect(tree).toMatchSnapshot();

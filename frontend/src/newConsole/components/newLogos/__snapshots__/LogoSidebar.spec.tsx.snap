@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Console Page Correctly renders LogosSidebar 1`] = `
+exports[`Console Page Correctly renders LogosSideBar 1`] = `
 <div
   className="console-page"
 >

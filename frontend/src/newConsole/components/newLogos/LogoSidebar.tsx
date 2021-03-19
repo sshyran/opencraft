@@ -23,7 +23,7 @@ interface Props extends StateProps, ActionProps {
   };
 }
 
-export class LogosSidebarComponent extends React.PureComponent<Props, State> {
+export class LogosSideBarComponent extends React.PureComponent<Props, State> {
   updateImage = (imageName: string, image: File) => {
     if (this.props.activeInstance && this.props.activeInstance.data) {
       this.props.updateImages(
@@ -103,7 +103,7 @@ export class LogosSidebarComponent extends React.PureComponent<Props, State> {
   }
 }
 
-export const LogosSidebar = connect<
+export const LogosSideBar = connect<
   StateProps,
   ActionProps,
   {},
@@ -112,4 +112,4 @@ export const LogosSidebar = connect<
 >((state: RootState) => state.console, {
   clearErrorMessage,
   updateImages
-})(LogosSidebarComponent);
+})(LogosSideBarComponent);
