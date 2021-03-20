@@ -76,9 +76,6 @@ export const ConsoleRoutes = () => {
         path={ROUTES.Console.NEW_LOGOS_SIDEBAR}
         component={LogosSideBar}
       />
-      <PrivateRoute exact path={ROUTES.Console.NEW_THEME_FOOTER}>
-        <Redirect to={ROUTES.Console.NEW_THEME_FOOTER_SIDEBAR} />
-      </PrivateRoute>
       <PrivateRoute
         exact
         path={ROUTES.Console.NEW_THEME_FOOTER_SIDEBAR}

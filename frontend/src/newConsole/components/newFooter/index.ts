@@ -1,2 +1,1 @@
-export * from './ThemeFooter';
-export * from './ThemeFooterSidebar';
+export * from './ThemeFooterSideBar';
