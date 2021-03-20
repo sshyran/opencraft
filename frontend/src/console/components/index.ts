@@ -43,3 +43,5 @@ export * from './ThemeColors';
 export * from './ButtonStyles';
 
 export * from './CourseOutlinePreview';
+
+export * from './Account';
