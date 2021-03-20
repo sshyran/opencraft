@@ -58,7 +58,10 @@ export class ThemeFooterSideBarComponent extends React.PureComponent<
               <Row>
                 <Col>
                   <h2>
-                    <WrappedMessage messages={messages} id="footerSettings" />
+                    <WrappedMessage
+                      messages={messages}
+                      id="newFooterSettings"
+                    />
                   </h2>
                 </Col>
               </Row>
