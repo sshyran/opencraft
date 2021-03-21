@@ -29,6 +29,7 @@
       width: 100%;
       padding: 15px;
       box-sizing: border-box;
+      padding-top: 0;
     }
 
     .form-label {
@@ -49,7 +50,15 @@
     .reset-value {
       margin-top: 2px;
       font-size: 14px;
-      font-family: PlayfairDisplay;
+      font-family: Chivo;
+      min-width: 100%;
+      text-align: left;
+      margin-left: 0;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
     }
   }
 }
