@@ -56,7 +56,7 @@ exports[`Theme footer sidebar tests renders without crashing 1`] = `
                     className="col"
                   >
                     <h2>
-                      Footer settings
+                      Footer
                     </h2>
                   </div>
                 </div>
