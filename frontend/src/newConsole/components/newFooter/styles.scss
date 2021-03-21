@@ -3,7 +3,7 @@
 .back-button {
   span:not(:first-child) {
     margin-left: 5.1px;
-    font-family: Chivo;
+    font-family: $chivo-font;
     font-size: 16px;
     text-transform: capitalize;
   }
@@ -18,7 +18,7 @@
     text-align: left;
     color: #0f1f24;
     font-size: 28px;
-    font-family: PlayfairDisplay;
+    font-family: $playfair-font;
     font-weight: bold;
   }
 
@@ -34,7 +34,7 @@
 
     .form-label {
       font-size: 20px;
-      font-family: PlayfairDisplay;
+      font-family: $playfair-font;
       font-weight: bold;
       color: #0f1f24;
     }
@@ -50,7 +50,7 @@
     .reset-value {
       margin-top: 2px;
       font-size: 14px;
-      font-family: Chivo;
+      font-family: $chivo-font;
       min-width: 100%;
       text-align: left;
       margin-left: 0;
