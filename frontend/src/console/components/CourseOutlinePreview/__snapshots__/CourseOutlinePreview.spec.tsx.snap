@@ -6,7 +6,7 @@ Array [
     className="theme-preview-navigation container-fluid"
   >
     <div
-      className="main-navigation-menu navigation-menu row"
+      className="d-flex felx-row main-navigation-menu navigation-menu row"
       style={
         Object {
           "background": undefined,
@@ -14,29 +14,25 @@ Array [
       }
     >
       <div
-        className="logo col-md-1"
+        className="logo"
       />
       <div
-        className="col-md-1"
+        className="flex-grow-1 d-flex flex-row ml-4 mr-4"
       >
-        <button
-          className="customizable-link active"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "borderBottomColor": undefined,
-              "color": undefined,
-            }
-          }
-          type="button"
+        <div
+          className="course-header mr-4"
         >
-          Courses
-        </button>
-      </div>
-      <div
-        className="col-md-3"
-      >
+          <span
+            className="course-org"
+          >
+            edX: Demox
+          </span>
+          <span
+            className="course-name"
+          >
+            Demonstration Course
+          </span>
+        </div>
         <button
           className="customizable-link"
           onMouseEnter={[Function]}
@@ -52,9 +48,7 @@ Array [
           Discover New
         </button>
       </div>
-      <div
-        className="col-md-7"
-      >
+      <div>
         <div
           className="navigation-menu navigation-submenu row"
         >

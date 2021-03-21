@@ -125,6 +125,7 @@ export const CourseOutlinePreview: React.FC<CourseOutlinePreviewProps> = (
         <NavigationMenu
           instanceData={instanceData}
           themeData={themeData}
+          coursePage
           loggedIn
         />
       </Container>
