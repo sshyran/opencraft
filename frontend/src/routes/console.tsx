@@ -14,7 +14,11 @@ import {
   CoursesManage,
   Account
 } from 'console/components';
-import { Logos as newLogos } from 'newConsole/components';
+import {
+  Logos as newLogos,
+  LogosSideBar,
+  ThemeFooterSideBar
+} from 'newConsole/components';
 import { PrivateRoute } from 'auth/components';
 import { ROUTES } from '../global/constants';
 
@@ -41,6 +45,10 @@ export const ConsoleRoutes = () => {
         path={ROUTES.Console.THEME_PREVIEW_AND_COLORS}
         component={ThemePreviewAndColors}
       />
+      {/* <PrivateRoute
+        path={ROUTES.Console.NEW_THEME_PREVIEW_AND_COLORS}
+        component={ThemePreviewAndColors}
+      /> */}
       <PrivateRoute
         path={ROUTES.Console.THEME_BUTTONS}
         component={ThemeButtons}
@@ -70,7 +78,12 @@ export const ConsoleRoutes = () => {
         exact
         path={ROUTES.Console.NEW_LOGOS_SIDEBAR}
         component={LogosSideBar}
-      /> */}
+      />
+      <PrivateRoute
+        exact
+        path={ROUTES.Console.NEW_THEME_FOOTER_SIDEBAR}
+        component={ThemeFooterSideBar}
+      />
       <PrivateRoute
         exact
         path={ROUTES.Console.COURSES}

@@ -226,7 +226,7 @@ exports[`Console Page Correctly renders loading page 1`] = `
                       </a>
                       <a
                         aria-current={null}
-                        href="/console/theming/footer"
+                        href="/newconsole/theming/footer"
                         onClick={[Function]}
                       >
                         Footer
@@ -539,7 +539,7 @@ exports[`Console Page Correctly renders page with data 1`] = `
                       </a>
                       <a
                         aria-current={null}
-                        href="/console/theming/footer"
+                        href="/newconsole/theming/footer"
                         onClick={[Function]}
                       >
                         Footer
@@ -808,7 +808,7 @@ exports[`Console Page Correctly renders page with email not verified alert 1`] =
                       </a>
                       <a
                         aria-current={null}
-                        href="/console/theming/footer"
+                        href="/newconsole/theming/footer"
                         onClick={[Function]}
                       >
                         Footer

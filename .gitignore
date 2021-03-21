@@ -110,3 +110,4 @@ bin/archived_cleanup.sh
 
 # vscode
 .vscode/
+frontend/.vscode/

@@ -121,7 +121,7 @@ exports[`renders without crashing 1`] = `
                       </a>
                       <a
                         aria-current={null}
-                        href="/console/theming/footer"
+                        href="/newconsole/theming/footer"
                         onClick={[Function]}
                       >
                         Footer
