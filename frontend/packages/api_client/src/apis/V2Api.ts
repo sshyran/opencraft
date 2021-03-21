@@ -331,7 +331,7 @@ export class V2Api extends runtime.BaseAPI {
 
     /**
      * This API can be used to register users, and to access user registration information for the current user.
-     * User account management API.
+     * Change the user password
      */
     async accountsPasswordChangeRaw(requestParameters: AccountsPasswordChangeRequest): Promise<runtime.ApiResponse<PasswordChange>> {
         if (requestParameters.username === null || requestParameters.username === undefined) {
@@ -368,7 +368,7 @@ export class V2Api extends runtime.BaseAPI {
 
     /**
      * This API can be used to register users, and to access user registration information for the current user.
-     * User account management API.
+     * Change the user password
      */
     async accountsPasswordChange(requestParameters: AccountsPasswordChangeRequest): Promise<PasswordChange> {
         const response = await this.accountsPasswordChangeRaw(requestParameters);
@@ -423,7 +423,7 @@ export class V2Api extends runtime.BaseAPI {
 
     /**
      * This API can be used to register users, and to access user registration information for the current user.
-     * User account management API.
+     * Get the user details from the request and update the profile accordingly
      */
     async accountsUpdateDetailsRaw(requestParameters: AccountsUpdateDetailsRequest): Promise<runtime.ApiResponse<UserDetail>> {
         if (requestParameters.username === null || requestParameters.username === undefined) {
@@ -460,7 +460,7 @@ export class V2Api extends runtime.BaseAPI {
 
     /**
      * This API can be used to register users, and to access user registration information for the current user.
-     * User account management API.
+     * Get the user details from the request and update the profile accordingly
      */
     async accountsUpdateDetails(requestParameters: AccountsUpdateDetailsRequest): Promise<UserDetail> {
         const response = await this.accountsUpdateDetailsRaw(requestParameters);
