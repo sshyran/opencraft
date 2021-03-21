@@ -73,7 +73,6 @@ export const ConsoleRoutes = () => {
         path={ROUTES.Console.NEW_LOGOS}
         component={newLogos}
       />
-      {/*
       <PrivateRoute
         exact
         path={ROUTES.Console.NEW_LOGOS_SIDEBAR}
