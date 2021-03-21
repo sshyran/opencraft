@@ -89,6 +89,9 @@ describe('NoticeBoard tests', () => {
     ]
   ];
   const date = new Date('2020-06-13T15:07:05.158Z');
+  // toLocaleDateString will not behave in the same way on each machine.
+  // this will make it consistant everywhere during testing.
+  date.toLocaleDateString = () => "June 13, 2020"
 
   const notifications = Object.values(DeploymentStatus).map(status => ({
     status, date, deployedChanges
