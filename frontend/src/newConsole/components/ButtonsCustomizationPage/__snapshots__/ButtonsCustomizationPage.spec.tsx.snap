@@ -1,0 +1,1819 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="console-page"
+>
+  <div
+    className="d-flex justify-content-center align-middle email-activation-alert"
+  >
+    <i
+      className="alert-icon fas fa-exclamation-triangle fa-xs"
+    />
+    One of your email addresses is pending confirmation. Please confirm it to begin managing your Open edX instance.
+  </div>
+  <div
+    className="new-console-page-container"
+  >
+    <div
+      className="new-console-page-content row"
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="justify-content-center row"
+        >
+          <div
+            className="col-md-3"
+          >
+            <button
+              className="back-button btn btn-link btn-sm"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <span>
+                <i
+                  aria-hidden="true"
+                  className="fa fa-angle-left sm"
+                />
+              </span>
+              <span>
+                Back
+              </span>
+            </button>
+            <h1
+              className="edit-heading"
+            >
+              Buttons
+            </h1>
+            <div
+              className="theme-buttons-container"
+            >
+              <div
+                className="button-customization-container"
+              >
+                <div
+                  className="button-customization-name"
+                >
+                  Primary button
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <i
+                      className="fas fa-info-circle"
+                    />
+                  </span>
+                </div>
+                <div
+                  className="button-customization-color-container"
+                >
+                  <div
+                    className="collapsible-edit-area"
+                  >
+                    <div
+                      className="edit-collapse"
+                    >
+                      <a
+                        className="nav-link"
+                        href="#"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                      >
+                        Edit
+                        <i
+                          className="fas xs fa-chevron-up"
+                        />
+                      </a>
+                      <span
+                        className="fill-line"
+                      />
+                    </div>
+                    <div
+                      aria-expanded={null}
+                      className="content collapse show"
+                    >
+                      <div
+                        className="d-flex flex-wrap justify-content-between"
+                      >
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Active styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnPrimaryBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnPrimaryColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnPrimaryBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Hover styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnPrimaryHoverBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnPrimaryHoverColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnPrimaryHoverBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="button-customization-container"
+              >
+                <div
+                  className="button-customization-name"
+                >
+                  Secondary button
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <i
+                      className="fas fa-info-circle"
+                    />
+                  </span>
+                </div>
+                <div
+                  className="button-customization-color-container"
+                >
+                  <div
+                    className="collapsible-edit-area"
+                  >
+                    <div
+                      className="edit-collapse"
+                    >
+                      <a
+                        className="nav-link"
+                        href="#"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                      >
+                        Edit
+                        <i
+                          className="fas xs fa-chevron-down"
+                        />
+                      </a>
+                      <span
+                        className="fill-line"
+                      />
+                    </div>
+                    <div
+                      aria-expanded={null}
+                      className="content collapse"
+                    >
+                      <div
+                        className="d-flex flex-wrap justify-content-between"
+                      >
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Active styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSecondaryBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSecondaryColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSecondaryBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Hover styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSecondaryHoverBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSecondaryHoverColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSecondaryHoverBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="button-customization-container"
+              >
+                <div
+                  className="button-customization-name"
+                >
+                  Register button
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <i
+                      className="fas fa-info-circle"
+                    />
+                  </span>
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <div
+                      className="custom-control custom-switch"
+                    >
+                      <input
+                        checked={false}
+                        className="custom-control-input"
+                        disabled={true}
+                        id="toggle-Register"
+                        onChange={[Function]}
+                        type="checkbox"
+                      />
+                      <label
+                        className="custom-control-label"
+                        htmlFor="toggle-Register"
+                        title=""
+                      >
+                        
+                      </label>
+                    </div>
+                  </span>
+                </div>
+                <div
+                  className="button-customization-color-container"
+                >
+                  <div
+                    className="collapsible-edit-area"
+                  >
+                    <div
+                      className="edit-collapse"
+                    >
+                      <a
+                        className="nav-link"
+                        href="#"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                      >
+                        Edit
+                        <i
+                          className="fas xs fa-chevron-down"
+                        />
+                      </a>
+                      <span
+                        className="fill-line"
+                      />
+                    </div>
+                    <div
+                      aria-expanded={null}
+                      className="content collapse"
+                    >
+                      <div
+                        className="d-flex flex-wrap justify-content-between"
+                      >
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Active styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnRegisterBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnRegisterColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnRegisterBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Hover styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnRegisterHoverBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnRegisterHoverColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnRegisterHoverBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="button-customization-container"
+              >
+                <div
+                  className="button-customization-name"
+                >
+                  Login button
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <i
+                      className="fas fa-info-circle"
+                    />
+                  </span>
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <div
+                      className="custom-control custom-switch"
+                    >
+                      <input
+                        checked={false}
+                        className="custom-control-input"
+                        disabled={true}
+                        id="toggle-SignIn"
+                        onChange={[Function]}
+                        type="checkbox"
+                      />
+                      <label
+                        className="custom-control-label"
+                        htmlFor="toggle-SignIn"
+                        title=""
+                      >
+                        
+                      </label>
+                    </div>
+                  </span>
+                </div>
+                <div
+                  className="button-customization-color-container"
+                >
+                  <div
+                    className="collapsible-edit-area"
+                  >
+                    <div
+                      className="edit-collapse"
+                    >
+                      <a
+                        className="nav-link"
+                        href="#"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                      >
+                        Edit
+                        <i
+                          className="fas xs fa-chevron-down"
+                        />
+                      </a>
+                      <span
+                        className="fill-line"
+                      />
+                    </div>
+                    <div
+                      aria-expanded={null}
+                      className="content collapse"
+                    >
+                      <div
+                        className="d-flex flex-wrap justify-content-between"
+                      >
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Active styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSignInBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSignInColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSignInBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Hover styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSignInHoverBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSignInHoverColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnSignInHoverBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="button-customization-container"
+              >
+                <div
+                  className="button-customization-name"
+                >
+                  Login and Registration page buttons
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <i
+                      className="fas fa-info-circle"
+                    />
+                  </span>
+                  <span
+                    className="info-icon"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                  >
+                    <div
+                      className="custom-control custom-switch"
+                    >
+                      <input
+                        checked={false}
+                        className="custom-control-input"
+                        disabled={true}
+                        id="toggle-Logistration"
+                        onChange={[Function]}
+                        type="checkbox"
+                      />
+                      <label
+                        className="custom-control-label"
+                        htmlFor="toggle-Logistration"
+                        title=""
+                      >
+                        
+                      </label>
+                    </div>
+                  </span>
+                </div>
+                <div
+                  className="button-customization-color-container"
+                >
+                  <div
+                    className="collapsible-edit-area"
+                  >
+                    <div
+                      className="edit-collapse"
+                    >
+                      <a
+                        className="nav-link"
+                        href="#"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                      >
+                        Edit
+                        <i
+                          className="fas xs fa-chevron-down"
+                        />
+                      </a>
+                      <span
+                        className="fill-line"
+                      />
+                    </div>
+                    <div
+                      aria-expanded={null}
+                      className="content collapse"
+                    >
+                      <div
+                        className="d-flex flex-wrap justify-content-between"
+                      >
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Active styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnLogistrationBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnLogistrationColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnLogistrationBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="button-category"
+                        >
+                          <div>
+                            <p
+                              className="style-name"
+                            >
+                              Hover styles
+                            </p>
+                          </div>
+                          <div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnLogistrationHoverBg"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button text color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnLogistrationHoverColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                className="color-input form-group"
+                              >
+                                <label
+                                  className="form-label"
+                                >
+                                  Button border color
+                                </label>
+                                <div
+                                  className="align-items-center row"
+                                >
+                                  <div
+                                    className="d-flex align-items-center color-input-field"
+                                  >
+                                    <input
+                                      className="input-field-color form-control"
+                                      disabled={true}
+                                      name="btnLogistrationHoverBorderColor"
+                                      onClick={[Function]}
+                                      readOnly={true}
+                                      value=""
+                                    />
+                                    <div
+                                      className="input-field-preview"
+                                      style={
+                                        Object {
+                                          "backgroundColor": "",
+                                        }
+                                      }
+                                    />
+                                  </div>
+                                  <button
+                                    className="reset-value padded flex-grow"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-md-7"
+          >
+            <div
+              className="preview-box card"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

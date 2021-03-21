@@ -14,6 +14,7 @@ import {
   CoursesManage
 } from 'console/components';
 import { PrivateRoute } from 'auth/components';
+import { ButtonsCustomization } from 'newConsole/components/ButtonsCustomizationPage';
 import { ROUTES } from '../global/constants';
 
 export const ConsoleRoutes = () => {
@@ -67,6 +68,11 @@ export const ConsoleRoutes = () => {
         path={ROUTES.Console.NEW_LOGOS_SIDEBAR}
         component={LogosSideBar}
       /> */}
+      <PrivateRoute
+        exact
+        path={ROUTES.Console.NEW_BUTTONS}
+        component={ButtonsCustomization}
+      />
       <PrivateRoute
         exact
         path={ROUTES.Console.COURSES}
